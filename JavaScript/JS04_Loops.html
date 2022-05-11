@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //math.floor() => aşağı yuvarlar
+        //Math.ceil() => sürekli yukarı yuvarlar
+        //Math.round() => değerine göre yuvarlar
+        //Math.trunc() => kesirli sayının tam kısmını alır
+      
+
+        //** ? example: 1'den n e kadar sayıların toplamını yazınız */
+
+        // const n = prompt("enter a number please");
+        // let toplam = 0;
+        // for(let i = 1; i<=n ; i++){
+            
+        //     toplam += i;
+        // }
+
+        // console.log("Toplam :", toplam);
+
+
+
+        //**************WHILE***************
+        // let i = 1;
+        // while(i<=5){
+        //     console.log("merhaba", i);
+        //     i++;
+        // }
+
+        // console.log("bitti");
+
+
+        // let not = prompt("enter the score please :");
+        
+        // while(not<0 || not > 100){
+        //     console.log("enter a valid score please");
+        //     let not = prompt("please enter a valid note:")
+        // }
+
+        // console.log("your score is :",not);
+
+        //************DO-WHILE***************
+
+        // let i =1;
+
+        // do{
+        //     console.log("merhaba", i);
+        //     i++;
+        // }while(i<=5);
+
+
+        // let not;
+
+        // do{
+        //     not = prompt("lütfen notunuzu giriniz:");
+
+        // }while (not< 0 || not >100);
+        // console.log("girdiğiniz not :", not);
+
+
+
+        var sayi,tahmin,hak=1,i=0;
+
+sayi=2 //Math.round(Math.random()*100);
+do
+{
+    tahmin=parseInt(prompt("Tahmini Giriniz: "));
+    if (tahmin<sayi)
+    {
+       console.log("Daha büyük bir sayı giriniz."); 
+    }
+    if (tahmin>sayi)
+    {
+        console.log("Daha küçük bir sayı giriniz."); 
+    }
+    if (tahmin==sayi)
+    {
+    console.log("Tebrikler bildiniz. Tuttuğum sayı: "+ sayi);
+    console.log(hak + ". hakkınızda bildiniz."); 
+    }
+
+hak++;
+}
+while ((tahmin!=sayi) && hak<=5)
+
+if (hak>5)
+{
+    console.log("Hakkınız kalmadı. Tutulan sayı : "+ sayi );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
