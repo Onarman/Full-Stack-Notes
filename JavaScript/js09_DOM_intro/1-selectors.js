@@ -13,15 +13,27 @@ console.log('***** SELECTORS *****');
 
 const header = document.getElementById('header');
 console.log(header);
+header.style.color = "red";
+header.style.fontWeight = "bolder";
 
-header.style.color = 'red';
+
+
 
 //* EXAMPLE-2 (Button Style)
 //*-------------------------------------------
 const button = document.getElementById('btn');
-btn.style.backgroundColor = 'black';
-btn.style.color = 'yellow';
-btn.style.fontSize = '2rem';
+button.style.backgroundColor = "black";
+button.style.color = "yellow";
+button.style.fontSize = "2rem";
+button.style.padding = "0.5rem";
+button.style.transform ="translateX(150px)";
+button.textContent="buton";
+
+button.style.borderRadius = "15px";
+button.style.transition = "all 5s";
+button.style.border = "yellow solid 5px";
+
+
 
 //*===========================================
 //*          GETELEMENTSBYTAGNAME()
@@ -35,7 +47,10 @@ console.log(img);
 
 img[0].style.border = 'solid';
 img[0].style.borderColor = 'red';
-img[0].style.transform = 'rotate(-5deg)';
+// img[0].style.transform = 'rotateY(360deg)';
+img[0].style.transform = "scale(.5,.5)";
+img[0].style.transition = "all 5s";
+img[0].style.borderRadius = "50%";
 
 //*===========================================
 //*          GETELEMENTSBYCLASSNAME()
@@ -44,9 +59,9 @@ img[0].style.transform = 'rotate(-5deg)';
 //* EXAMPLE-4
 //* ---------------
 const par = document.getElementsByClassName('par');
-// par[0].textContent = 'DOM Manipülasyonu';
+par[0].textContent = 'DOM Manipülasyonu';
 // par[0].innerText = 'DOM Manipülasyonu';
-par[0].innerHTML += ' <a href="https://www.clarusway.com">Clarusway</a>';
+par[0].innerHTML = ' <a href="https://www.clarusway.com">Clarusway</a>';
 
 //* ========================================
 //*              QUERYSELECTOR()

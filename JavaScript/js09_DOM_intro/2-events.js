@@ -1,6 +1,6 @@
-//* ======================================================
+//*======================================================
 //*                        EVENTS
-//* ======================================================
+//*======================================================
 
 console.log('****** EVENTS *******');
 
@@ -9,9 +9,9 @@ console.log('****** EVENTS *******');
 
 //? METHOD-3 (ONLY JAVASCRIPT)
 //?--------------------------------------------------------
-// document.getElementById('header').onmouseover = function () {
-//   document.getElementById('header').style.color = 'red';
-// };
+document.getElementById('header').onmouseover = function () {
+  document.getElementById('header').style.color = 'red';
+};
 
 const header = document.getElementById('header');
 
@@ -27,23 +27,23 @@ header.onmouseout = function () {
 //?-------------------------------------------------------
 const myImg = document.querySelector('img');
 
-// myImg.addEventListener('mouseover', () => {
-//   myImg.style.transform = 'translateY(5px)';
-// });
+myImg.addEventListener('mouseover', () => {
+  myImg.style.transform = 'translateY(5px)';
+});
 
-// myImg.addEventListener('mouseout', () => {
-//   myImg.style.transform = 'translateY(-5px)';
-// });
+myImg.addEventListener('mouseout', () => {
+  myImg.style.transform = 'translateY(-5px)';
+});
 
-// myImg.addEventListener('mouseover', () => {
-//   myImg.style.transform = 'scale(1.2, 1.4)';
-// });
+myImg.addEventListener('mouseover', () => {
+  myImg.style.transform = 'scale(1.2, 1.4)';
+});
 
-// myImg.addEventListener('mouseout', () => {
-//   myImg.style.transform = 'scale(1)';
-// });
+myImg.addEventListener('mouseout', () => {
+  myImg.style.transform = 'scale(1)';
+});
 
-//* --------------------------------------------------
+//*--------------------------------------------------
 //* EXAMPLE-2 (Button onclick)
 //* -------------------------------------------------
 
