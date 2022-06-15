@@ -33,6 +33,6 @@ const fetchCountry = async (name) => {
   };
   
   fetchCountry('turkey');
-  // fetchCountry('usa');
-  // fetchCountry('france');
+  fetchCountry('usa');
+  fetchCountry('france');
   
