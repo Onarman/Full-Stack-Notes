@@ -13,9 +13,9 @@ const book1 = {
     },
   };
   
-  console.log(book1);
-  console.log(book1.getSummary());
-  console.log(book1.toString()); //! Object nesnesinden miras yoluyla geldi.
+  // console.log(book1);
+  // console.log(book1.getSummary());
+  // console.log(book1.toString()); //! Object nesnesinden miras yoluyla geldi.
   
   const book2 = {
     title: 'the lily of the valley',
